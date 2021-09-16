@@ -1,9 +1,14 @@
+from random import getrandbits
 from RobotArm import RobotArm
 
 robotArm = RobotArm('exercise 3')
 
 # Jouw python instructies zet je vanaf hier:
-
+for i in range(4,0,-1):
+    robotArm.grab()
+    robotArm.moveRight()
+    robotArm.drop()
+    robotArm.moveLeft()
 
 
 
